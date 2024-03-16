@@ -1,0 +1,54 @@
+.admin-row{
+ height: 100vh;
+}
+.admin-col{
+  background-color: #4C5FC1;
+}
+.admin{
+    margin-top: 2rem;
+ 
+  
+}
+.admin-name{
+    padding-bottom: 20px;
+   
+}
+.dashbord-data{
+   display: flex;
+   flex-direction: column;
+  
+
+}
+.dashbord-data ul li{
+   list-style: none;
+   padding-bottom: 12px;
+  
+}
+.dashbord-data ul li a{
+  text-decoration: none;
+color: #ffff;
+  
+}
+
+.table-container {
+  margin: 20px; 
+}
+thead{
+background-color: black !important;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+
+}
+
+th {
+  background-color: #f2f2f2;
+}

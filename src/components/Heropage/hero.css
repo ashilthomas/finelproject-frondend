@@ -1,0 +1,21 @@
+.hero-image img{
+     width: 100%;
+}
+
+.carousel-caption{
+    
+       /* Add a transparency to the background
+               using rgba value */
+               background: rgba(255, 255, 255, 0.5);
+ 
+               /* Add a transparency to shadow */
+               box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+               top: 32%;
+            bottom: 35%;
+}
+.carousel-caption p{
+     color: black;
+}
+.carousel-caption h3{
+     color:black;
+}

@@ -1,0 +1,35 @@
+.about-image{
+   
+    background-color: #00ffff;
+   background-image: url('https://cdn11.bigcommerce.com/s-h1rryf/images/stencil/1920w/carousel/42/02_2.jpg?c=2');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-section{
+ /* background-color: #505050; */
+ width: 600px;
+
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+            /* Add a transparency to the background
+               using rgba value */
+               background: rgba(255, 255, 255, 0.5);
+ 
+               box-shadow: 0 26px 42px rgba(0, 0, 0, 0.1);
+        
+ 
+}
+.about-text h3{
+    padding-top: 30px;
+    text-align: center;
+    color: #505050;
+}
+.about-text p{
+    padding-top: 10px;
+    text-align: center;
+    color: #505050;
+}

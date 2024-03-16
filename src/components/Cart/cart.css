@@ -1,0 +1,40 @@
+.cart{
+padding-top: 20px;
+border-bottom: 1px solid #c2c2c2;
+padding-bottom: 20px;
+}
+
+.cart-image{
+    width: 150px;
+}
+.quantity-button{
+   
+    border-radius: 50%;
+  background-color: #3498db;
+  color: #ffffff; 
+  border: none;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+.cart-button{
+    display: flex;
+  
+    padding-top: 10px;
+    gap: 10px;
+   
+}
+.quantity-count{
+    width: 46px;
+    height: 28px; 
+    border: 1px solid #c2c2c2;
+}
+.quantity-count p{
+    text-align: center;
+   font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.cart-text{
+    margin-left: 20px;
+}

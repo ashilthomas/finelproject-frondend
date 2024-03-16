@@ -1,0 +1,27 @@
+.Cart-button{
+    margin-right: 10px;
+    background-color: #6c7ae0;
+    border: none;
+}
+.size-box-container {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .size-box {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  
+    &.selected {
+      background-color: #007bff;
+      color: #fff;
+      border-color: #007bff;
+    }
+  }
