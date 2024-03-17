@@ -66,7 +66,7 @@ function Cart() {
 
 
   return (
-    <div>
+    <div><h1>hallo i smi msdffjdgkjgkhgd</h1>
         <Header length={userCart.length}/>
       <Container>
         <Row style={{ display: "flex",flexDirection: "column" }}>
