@@ -84,7 +84,7 @@ function Header({length}) {
       <Container>
         <Row>
           <Col>
-            <Navbar expand="lg">
+            <Navbar expand="lg" >
               <Container className="header-container">
                 <Navbar.Brand style={{color:'#6c7ae0'}}
                   as={Link}

@@ -1,7 +1,19 @@
+.buyandcartbtn{
+  display: flex;
+}
+
 .Cart-button{
     margin-right: 10px;
     background-color: #6c7ae0;
     border: none;
+    width: 50%;
+   
+}
+.buy-button{
+background-color:#505050 ;
+
+
+  width: 50%;
 }
 .size-box-container {
     display: flex;

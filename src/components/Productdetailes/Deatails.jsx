@@ -101,14 +101,14 @@ console.log(detail);
               <div>
                 <SizeBox />
               </div>
-              <div className="mt-3">
+              <div className="mt-3 buyandcartbtn" >
                 <Button
                   onClick={() => addtocart(detail._id)}
                   className="Cart-button"
                 >
                   Add to Cart
                 </Button>
-                <Button className="ml-5 inhertance">Buy Now</Button>
+                <Button className="ml-5  buy-button">Buy Now</Button>
               </div>
             </div>
           </Col>

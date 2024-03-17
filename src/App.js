@@ -18,8 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { setProducts } from "./Redux/productReducer";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+
 import EditProducts from "./components/isAdmin/CreateProduct/EditProducts";
 
 function App() {
@@ -41,10 +40,12 @@ function App() {
 
   console.log(mensProduct);
   return (
-    <div>
+  
       <BrowserRouter>
-        <Header />
+      
         <Routes>
+        
+     
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Registretion />} />
           <Route path="/Login" element={<Login />} />
@@ -56,11 +57,12 @@ function App() {
           <Route path="/womens" element={<Womens />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/shope" element={<Shope />} />
-          <Route path="/editproducts/:id" element={<EditProducts />} />
+          <Route path="/editproducts/:id" element={<EditProducts />} />       
+      
         </Routes>
 
       </BrowserRouter>
-    </div>
+
   );
 }
 

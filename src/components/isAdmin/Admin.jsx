@@ -4,8 +4,9 @@ import "./admin.css";
 
 import Users from "./Userpage/Users";
 import { Link } from "react-router-dom";
-
-
+import CategoryIcon from '@mui/icons-material/Category';
+import HomeIcon from '@mui/icons-material/Home';
+import CreateIcon from '@mui/icons-material/Create';
 
 
 function Admin() {
@@ -22,17 +23,22 @@ function Admin() {
                 <ul>
                   <li>
                     <Link to={"/"} eventKey="2" title="Item">
-                      Home
+                      <HomeIcon />
+                      <span className="ps-2"
+                      >Home</span>
                     </Link>
                   </li>
                   <li>
                     <Link to={"/product-creation"} eventKey="2" title="Item">
-                      Create producte
+                    <CreateIcon/>
+                      <span className="ps-2"
+                      >Create producte</span>
                     </Link>
                   </li>
                   <li>
                     <Link to={"/category-creation"} eventKey="2" title="Item">
-                      Create category
+                      <CategoryIcon/>
+                     <span className="ps-2">Create Category</span>
                     </Link>
                   </li>
                 </ul>
@@ -40,7 +46,10 @@ function Admin() {
             </div>
           </Col>
           <Col sm={10}>
-            <Users />
+            <div className="users-details" >
+                  <Users />
+            </div>
+        
           </Col>
         </Row>
       </Container>

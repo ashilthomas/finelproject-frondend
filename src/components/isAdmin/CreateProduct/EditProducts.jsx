@@ -160,7 +160,7 @@ const EditProducts = () => {
               </FormControl>
               {/* Other product fields */}
               <Row className="mb-3">
-                <Form.Group>
+                <Form.Group as={Col}>
                   <Form.Label>Enter name</Form.Label>
                   <Form.Control
                     required
@@ -171,9 +171,10 @@ const EditProducts = () => {
                   />
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group controlId="name">
+                <Form.Group as={Col}>
                   <Form.Label>Enter Price</Form.Label>
                   <Form.Control
+                   className="form-controll"
                     required
                     type="text"
                     defaultValue={price}
@@ -182,9 +183,9 @@ const EditProducts = () => {
                   />
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group>
+                <Form.Group >
                   <Form.Label>discription</Form.Label>
-                  <Form.Control
+                  <Form.Control as="textarea" rows={3} 
                     required
                     type="text"
                     defaultValue={discription}
@@ -193,7 +194,7 @@ const EditProducts = () => {
                   />
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group>
+                <Form.Group >
                   <Form.Label>Enter Quantity</Form.Label>
                   <Form.Control
                     required
@@ -205,12 +206,12 @@ const EditProducts = () => {
                   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                 </Form.Group>
               </Row>
-              {/* File upload */}
+           
               <Form.Group controlId="photograph" className="mb-3">
                 <Form.Label>Product Photograph</Form.Label>
                 <Form.Control type="file" onChange={handilProductPhotograph} />
               </Form.Group>
-              {/* Submit button */}
+           
               <Button type="submit">Submit form</Button>
             </Form>
           </div>

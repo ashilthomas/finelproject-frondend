@@ -11,9 +11,19 @@ import Header from "../Header/Header";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
+
+
+
+
+
+
+
+
 function Cart() {
   const [cartlist, setCartList] = useState([]);
-  const [quantity, setQuantity] = useState(0);
+  const [count, setCount] = useState(0);
+
   const user = useSelector((state) => state.auth.user);
 
   useEffect(() => {
@@ -34,14 +44,23 @@ function Cart() {
       }
     };
     getCartList();
-  }, [cartlist]);
+  }, [count]);
 
- const handleQuantityChange= async (products) => {
+ const handleQuantityChangePlus= async (products) => {
+   setCount(count+1)
     const responce = axios.post("http://localhost:4000/singlecart", {
       products,
-      quantity
+      quantity : count
     });
   };
+ const handleQuantityChangeMinus= async (products) => {
+   setCount(count-1)
+    const responce = axios.post("http://localhost:4000/singlecart", {
+      products,
+      quantity:count
+    });
+  };
+ console.log(count);
   const userCart = cartlist.filter((item) => item.userId && item.userId._id === user?._id
   );
 
@@ -68,7 +87,8 @@ function Cart() {
 
                       <button
                         className="quantity-button"
-                        onClick={() => setQuantity(quantity + 1)}
+                       // onClick={() => setQuantity(quantity + 1)}
+                       onClick={() => handleQuantityChangePlus(v.products._id)}
                       >
                         <AddIcon />
                       </button>
@@ -77,16 +97,17 @@ function Cart() {
                       </div>
                       <button
                         className="quantity-button"
-                        onClick={() =>setQuantity(quantity - 1)}
+                        //onClick={() =>setQuantity(quantity - 1)}
+                        onClick={() => handleQuantityChangeMinus(v.products._id)}
                       >
                         <RemoveIcon />
                       </button>
-                      <button
+                      {/* <button
                         className="quantity-button"
-                        onClick={() => handleQuantityChange(v.products._id)}
+                       // onClick={() => handleQuantityChange(v.products._id)}
                       >
                        <DoneIcon/>
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                   <div className="cart-text">

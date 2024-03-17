@@ -21,7 +21,7 @@
 }
 .dashbord-data ul li{
    list-style: none;
-   padding-bottom: 12px;
+   padding-bottom: 20px;
   
 }
 .dashbord-data ul li a{
@@ -51,4 +51,22 @@ th, td {
 
 th {
   background-color: #f2f2f2;
+}
+
+Form.Control{
+border-radius: none;
+
+}
+.users-details{
+   background-color: white;
+margin-top: 40px;
+padding: 20px;
+
+/* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: box-shadow 0.3s ease;
+ 
+}
+.user-active{
+  background-color: #6c7ae0;
 }

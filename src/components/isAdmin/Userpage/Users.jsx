@@ -37,8 +37,8 @@ function Users() {
       <div>
         <ToastContainer />
         <Row>
-          <Col>
-            <Table  responsive>
+          <Col className="">
+            <Table  responsive style={{marginBottom:'none'}}>
               <thead className="table-header">
                 <tr>
                   <th>#</th>
@@ -59,7 +59,7 @@ function Users() {
                       <td>{v.fullname}</td>
                       <td>{v.email}</td>
                       <td>{v.users}</td>
-                    <td><Button>Active</Button></td>
+                    <td><Button className="user-active">Active</Button></td>
                     </tr>
                   ))}
               </tbody>
